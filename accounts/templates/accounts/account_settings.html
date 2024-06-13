@@ -8,6 +8,8 @@
             max-height: 300px;
             margin: 0 auto;
             border-radius: 50%;
+            object-fit: contain;
+            aspect-ratio: 1/1;
         }
     </style>
 
@@ -19,7 +21,7 @@
                 <a href="" class="btn btn-warning">Back to Profile</a>
                 <h3 style="text-align: center">Account Settings</h3>
                 <hr>
-                <img src="{{request.user.customer.profile_pic.url}}" alt="" class=" profile-pic">
+                <img src="{{request.user.customer.profile_pic.url}}" alt="" class="profile-pic">
             </div>
         </div>
         <div class="col-md-9">
